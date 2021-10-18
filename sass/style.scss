@@ -1,0 +1,136 @@
+// vars
+$font-family:'Red Hat Display',
+sans-serif;
+$font-medium : 500;
+$font-bold: 700;
+$font-black:900;
+$font-size: 16px;
+//colors
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$verypaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$anchorBlue: hsl(228, 45%, 44%);
+// images
+$imgDesktop: "../images/pattern-background-desktop.svg";
+$imgMobile: "../images/pattern-background-mobile.svg";
+//
+$borderRadius: 16px;
+$maxWidth: 300px;
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $font-family;
+    font-weight: $font-medium;
+    box-sizing: content-box;
+    // width: 100%;
+    background-image: url($imgDesktop);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    color: $desaturatedBlue;
+
+    @media (max-width: 768px) {
+        background-image: url($imgMobile);
+    }
+
+    a {
+        color: $anchorBlue;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main {
+    background-color: white;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    margin: 1rem;
+
+    @media (min-width: 768px) {
+        max-width: $maxWidth;
+    }
+
+    article {
+        header {
+            img {
+                width: 100%;
+            }
+        }
+
+        .textCard {
+            padding: 1rem;
+
+            h2 {
+                text-align: center;
+                color: $darkBlue;
+                font-weight: $font-black;
+            }
+
+            p {
+                text-align: center;
+                line-height: 26px;
+            }
+        }
+
+        .callToAction {
+            margin: 0 1rem;
+            padding: 1rem;
+            background-color: $verypaleBlue;
+            border-radius: $borderRadius;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            h4 {
+                color: $darkBlue;
+                margin-bottom: 0.4rem;
+            }
+
+            img {
+                margin-right: $font-size;
+            }
+
+            a {
+                color: $brightBlue;
+            }
+
+        }
+
+        .buttons {
+            padding: 1rem;
+            text-align: center;
+
+            button {
+                border-radius: $borderRadius;
+                background-color: $brightBlue;
+                width: 100%;
+                border: none;
+                color: $paleBlue;
+                font-weight: $font-bold;
+                font-size: 20px;
+                padding: 1rem;
+                text-align: center;
+                margin-bottom: .6rem;
+            }
+
+            a {
+                text-decoration: none;
+                width: 100%;
+                font-weight: $font-bold;
+            }
+        }
+    }
+
+}
