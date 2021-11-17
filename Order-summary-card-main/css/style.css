@@ -1,0 +1,145 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  box-sizing: content-box;
+  background-color: #e0e8ff;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  color: #7280a7;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+body a {
+  color: #3e52a3;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+main {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 1rem;
+  -webkit-box-shadow: 0px 10px 22px -7px rgba(31, 47, 86, 0.2);
+  -moz-box-shadow: 0px 10px 22px -7px rgba(31, 47, 86, 0.2);
+  box-shadow: 0px 10px 22px -7px rgba(31, 47, 86, 0.2);
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 300px;
+  }
+}
+main article header img {
+  width: 100%;
+}
+main article .p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main article .textCard {
+  padding: 1rem;
+}
+main article .textCard h2 {
+  text-align: center;
+  color: #1f2f56;
+  font-weight: 900;
+}
+main article .textCard p {
+  text-align: center;
+  line-height: 19px;
+  font-size: 0.8rem;
+}
+main article .callToAction {
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: #f5f7ff;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main article .callToAction div {
+  flex-grow: 3;
+  line-height: 10px;
+}
+main article .callToAction h5 {
+  color: #1f2f56;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+}
+main article .callToAction span {
+  font-size: 12px;
+  color: #7280a7;
+}
+main article .callToAction img {
+  margin-right: 16px;
+  width: 34px;
+  flex-basis: 1;
+}
+main article .callToAction a {
+  color: #3829e0;
+  font-size: 11px;
+  font-weight: 900;
+  flex-basis: 1;
+}
+main article .callToAction a:link, main article .callToAction a:visited {
+  color: #3829e0;
+}
+main article .callToAction a:hover {
+  color: rgba(114, 128, 167, 0.7);
+  text-decoration: none;
+}
+main article .buttons {
+  padding: 1rem;
+  margin-bottom: 0.9rem;
+  margin-top: 0.9rem;
+  text-align: center;
+}
+main article .buttons button {
+  border-radius: 7px;
+  background-color: #3829e0;
+  width: 100%;
+  border: none;
+  color: #e0e8ff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0.6rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  -webkit-box-shadow: 0px 6px 21px -7px #3e52a3;
+  -moz-box-shadow: 0px 6px 21px -7px #3e52a3;
+  box-shadow: 0px 6px 21px -7px #3e52a3;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+main article .buttons button:hover {
+  background-color: rgba(56, 41, 224, 0.5);
+}
+main article .buttons a {
+  text-decoration: none;
+  width: 100%;
+  font-weight: 900;
+  font-size: 11px;
+  color: rgba(114, 128, 167, 0.7);
+}
+main article .buttons a:hover {
+  color: #1f2f56;
+}
+
+/*# sourceMappingURL=style.css.map */
